@@ -73,7 +73,7 @@ const initialChatId = uuidv4();
 
 const initialState = {
   apiState: "idle" as APIState,
-  apiKey: undefined,
+  apiKey: process.env.APIKEY || undefined,
   chats: [
     {
       id: initialChatId,
